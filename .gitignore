@@ -1,0 +1,35 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# --- Azure Functions ---
+obj/
+local.settings.json
+.python_packages/
+.azurefunctions/
+# REMOVED .funcignore from here so it stays in GitHub
+
+# --- Azure Storage Emulator (Azurite) ---
+__azurite_db_*.json
+__blobstorage__
+__queuestorage__
+__tablestorage__
+
+# Local test outputs and story backups
+stories_backup/
+test_outputs/
+temp_chunk_*.mp3
+
+# --- IDEs & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- To be dropped ---
+temp_file/

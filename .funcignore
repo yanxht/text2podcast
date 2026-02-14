@@ -1,0 +1,17 @@
+# Local data and backups (THE BIG STUFF)
+stories_backup/
+test_outputs/
+*.mp3
+*.md
+
+# Python environment and cache
+.venv/
+.python_packages/
+__pycache__/
+modules/__pycache__/
+.pytest_cache/
+
+# IDE and OS files
+.vscode/
+.git/
+.DS_Store

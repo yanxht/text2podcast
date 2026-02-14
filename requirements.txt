@@ -1,0 +1,22 @@
+# Azure Functions Core
+azure-functions
+
+# RSS Parsing
+feedparser >= 6.0
+
+# API Requests
+requests >= 2.8
+
+# LLM Integration
+openai >= 1.0
+
+# Language Detection
+langid >= 1.1
+
+# Azure Cloud Services
+azure-storage-blob >= 12.0
+azure-data-tables >= 12.0
+azure-cognitiveservices-speech >= 1.40.0
+
+# Audio Processing
+pydub >= 0.25
