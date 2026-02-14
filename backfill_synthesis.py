@@ -6,7 +6,10 @@ from azure.storage.blob import BlobServiceClient
 from modules import tts_engine, blob_uploader, rss_generator, telegram_bot
 
 def parse_md_content(content):
-    """Parses metadata from the Markdown text stored in Blob."""
+    """
+    Reverse-engineers the metadata from a Markdown file stored in Blob.
+    This is critical for reconstructing the 'RSS packet' without re-scraping Reddit.
+    """
     
     def get_val(key):
         # Improved regex to handle potential whitespace or formatting quirks
@@ -35,7 +38,11 @@ def parse_md_content(content):
     }
 
 def run_cloud_backfill():
-    # Setup Azure Client
+    """
+    The main logic for finding and fixing "silent failures."
+    Scans Blob storage for MD files that don't have a matching MP3.
+    """
+    
     blob_service_client = BlobServiceClient.from_connection_string(config.AZURE_STORAGE_CONNECTION_STRING)
     container_client = blob_service_client.get_container_client(config.AZURE_STORAGE_CONTAINER)
 
