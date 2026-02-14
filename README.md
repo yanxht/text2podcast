@@ -132,3 +132,20 @@ Triggering the function is only half the battle; you need to see the "Log Stream
 * `🎙️ Using Gender: ...`: Confirms LLM cleaning and inference is working.
 * `✅ Uploaded to Blob: ...`: Confirms your storage connection string is correct.
 * `🔥 CRITICAL CRASH`: If you see this, check the traceback—it usually points to a missing Environment Variable in the Azure Portal.
+
+---
+
+## ⚖️ Disclaimer & Compliance
+
+### **Project Nature**
+* This is a **personal interest project** developed for non-commercial research and development purposes.
+* It is hosted on a **personal Azure subscription** and is not an official product of any organization.
+* It is not endorsed, supported, or affiliated with any company.
+
+### **Content & Scraping Policy**
+* **Direct Scraping:** This tool retrieves content directly from publicly available Reddit URLs for the sole purpose of personal text-to-speech conversion. 
+* **Fair Use:** This pipeline is designed for **private, non-commercial use**, functioning as a personal accessibility tool.
+* **Copyright:** All original content belongs to the respective Reddit authors. This project does not claim ownership or redistribution rights over the scraped material.
+
+### **License**
+This project is licensed under the **MIT License**. Use this software at your own risk.
