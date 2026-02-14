@@ -86,7 +86,7 @@ func azure functionapp publish text2podcast-service-01
 
 ---
 
-### **3. Validate with Manual Trigger **
+### **3. Validate with Manual Trigger**
 
 Once deployed, the `timer_trigger` will run hourly. However, you should **manually trigger** the function immediately after deployment to validate that the cloud environment (FFmpeg paths, Storage keys, etc.) is working correctly.
 
@@ -110,7 +110,7 @@ curl "[https://your-app.azurewebsites.net/api/manual_run?code=YOUR_SECRET_KEY](h
 
 ---
 
-### **4. Monitoring & Debugging **
+### **4. Monitoring & Debugging**
 
 Triggering the function is only half the battle; you need to see the "Log Stream" to catch errors like `Exec format error` or `API Key Unauthorized`.
 
